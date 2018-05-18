@@ -4,7 +4,7 @@ To configure Layer 3 EtherChannels, create the port-channel logical interface an
 interfaces into the port-channel.
 ### Creating Port-Channel Logical Interfaces
 This example shows how to create port-channel interface 1:
-'''
+```
 Switch# configure terminal
 Switch(config)# interface port-channel 1
 Switch(config-if)# ip address 172.32.52.10 255.255.255.0
@@ -19,4 +19,4 @@ interface Port-channel1
  no ip directed-broadcast
 end
 Switch#
-'''
+```
