@@ -4,7 +4,7 @@ To configure Layer 2 EtherChannels, create the port-channel logical interface an
 interfaces into the port-channel.
 ### Creating Port-Channel Logical Interfaces
 This example shows how to create port-channel interface 1:
-```
+```IOS
 Switch# configure terminal
 Switch(config)# interface port-channel 1
 Switch(config-if)# end
