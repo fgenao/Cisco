@@ -7,9 +7,10 @@ This example shows how to create port-channel interface 1:
 ```
 Switch# configure terminal
 Switch(config)# interface port-channel 1
-Switch(config-if)# ip address 172.32.52.10 255.255.255.0
 Switch(config-if)# end
+```
 This example shows how to verify the configuration of port-channel interface 1:
+```
 Switch# show running-config interface port-channel 1
 Building configuration...
 Current configuration:
