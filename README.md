@@ -20,3 +20,14 @@ interface Port-channel1
 end
 Switch#
 ```
+### Configuring Physical Interfaces as Layer 3 EtherChannels
+This example shows how to configure Fast Ethernet interfaces 5/4 and 5/5 into port-channel 1 with PAgP
+mode desirable:
+```
+Switch# configure terminal
+Switch(config)# interface range fastethernet 5/4 - 5 !(Note: Space is mandatory.)
+Switch(config-if)# no switchport
+Switch(config-if)# no ip address
+Switch(config-if)# channel-group 1 mode desirable
+Switch(config-if)# end
+```
