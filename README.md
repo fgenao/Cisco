@@ -13,11 +13,11 @@ This example shows how to verify the configuration of port-channel interface 1:
 ```
 Switch# show running-config interface port-channel 1
 Building configuration...
-Current configuration:
+Current configuration: 92 bytes
 !
 interface Port-channel1
- ip address 172.32.52.10 255.255.255.0
- no ip directed-broadcast
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
 end
 Switch#
 ```
